@@ -34,3 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
   hideLoader();
   updateScrollProgressBar();
 });
+
+// -----------------------------------------------------------------------------
+document.querySelector(".hamburger").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".header__list").classList.toggle("active");
+  document.body.classList.toggle("menu-open");
+});

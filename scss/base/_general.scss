@@ -8,7 +8,9 @@
     --white-color: #121212;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -91,43 +93,43 @@ img {
     width: 0;
 }
 
-#loader {
-    width: 80px;
-    height: 80px;
-    border: 5px solid transparent;
-    border-top: 5px solid #2979ff;
-    border-bottom: 5px solid #2979ff;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
+// #loader {
+//     width: 80px;
+//     height: 80px;
+//     border: 5px solid transparent;
+//     border-top: 5px solid #2979ff;
+//     border-bottom: 5px solid #2979ff;
+//     border-radius: 50%;
+//     animation: spin 1s linear infinite;
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 9999;
+//     opacity: 1;
+//     transition: opacity 1s ease;
+// }
 
-#loader.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
+// #loader.hidden {
+//     opacity: 0;
+//     pointer-events: none;
+// }
 
-@keyframes spin {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
+// @keyframes spin {
+//     0% {
+//         transform: translate(-50%, -50%) rotate(0deg);
+//     }
 
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+//     100% {
+//         transform: translate(-50%, -50%) rotate(360deg);
+//     }
+// }
 
-.hidden-content {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
+// .hidden-content {
+//     opacity: 0;
+//     transition: opacity 1s ease;
+// }
 
-.hidden-content.show {
-    opacity: 1;
-}
+// .hidden-content.show {
+//     opacity: 1;
+// }
