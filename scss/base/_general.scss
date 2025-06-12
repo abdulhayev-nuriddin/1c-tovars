@@ -62,6 +62,11 @@ img {
     height: auto;
 }
 
+a,
+button {
+    cursor: pointer;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
@@ -133,3 +138,13 @@ img {
 // .hidden-content.show {
 //     opacity: 1;
 // }
+
+.hover:hover {
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.hover:active {
+    transform: scale(0.95);
+}
