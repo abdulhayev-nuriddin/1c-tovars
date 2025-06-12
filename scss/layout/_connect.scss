@@ -1,0 +1,137 @@
+.connect {
+    margin-top: 60px;
+    padding: 60px 0;
+    background: #F7F8F8;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__card,
+    &__cardd {
+        padding: 40px;
+        border-radius: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px 10px #0000000D;
+        width: 646px;
+
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 139%;
+            color: #2C2B35;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 139%;
+            color: #6F7973;
+            margin-top: 14px;
+            margin-bottom: 32px;
+        }
+
+        &__link {
+            padding: 10px 30px;
+            border-radius: 1000px;
+            color: #43A548;
+            border: 1px solid #43A548;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__img1 {
+        background: #FDEAD4;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__img2 {
+        background: #EECFFC;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__img3 {
+        background: #DCFCFA;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__img4 {
+        background: #FBDCDC;
+        border-radius: 4px;
+
+        img {
+            padding: 6px;
+        }
+    }
+
+    &__img5 {
+        background: #D8DCFC;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__img6 {
+        background: #DAFCE3;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__img7 {
+        background: #FCFDD7;
+        border-radius: 4px;
+
+        img {
+            padding: 4px;
+        }
+    }
+
+    &__cardd {
+        width: 424px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .connect {
+        &__cards {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__card,
+        &__cardd {
+            width: 100%;
+        }
+    }
+}
