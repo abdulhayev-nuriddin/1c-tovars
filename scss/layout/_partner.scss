@@ -1,0 +1,29 @@
+.partner {
+    margin: 120px 0;
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 139%;
+        color: #3D4641;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .partner {
+        margin: 60px 0;
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    }
+}

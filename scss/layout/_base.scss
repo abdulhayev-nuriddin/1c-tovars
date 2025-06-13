@@ -1,0 +1,98 @@
+.base {
+    background: linear-gradient(252.7deg, #EBF5EB 17.34%, #EFFBF0 90.57%);
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 60px 0;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 139%;
+    }
+
+    &__link {
+        padding: 12px 30px;
+        border-radius: 1000px;
+        color: #fff;
+        background: #43A548;
+        transition: all 0.3s ease;
+    }
+}
+
+.base__carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.base__carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 20px;
+}
+
+.base__card {
+    flex: 0 0 calc((100% - 40px) / 3);
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 0 0 1px #e6e6e6, 0px 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.base__card h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 139%;
+    color: #3D4641;
+}
+
+.base__card a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 139%;
+    text-align: right;
+    color: #43A548;
+}
+
+.base__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 8px 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ccc;
+    z-index: 2;
+    transition: background 0.3s;
+}
+
+.base__nav:hover {
+    background: #eee;
+}
+
+.base__nav.base__prev {
+    left: 1px;
+}
+
+.base__nav.base__next {
+    right: 1px;
+}
+
+@media (max-width: 480px) {
+    .base__card {
+        flex: 0 0 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+}
