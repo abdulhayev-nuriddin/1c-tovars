@@ -1,0 +1,119 @@
+.support {
+    margin-top: 120px;
+    margin-bottom: 60px;
+
+    &__container {
+        padding: 40px;
+        box-shadow: 0px 4px 12px 10px #0000000D;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 646px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &__address {
+            font-family: Gilroy;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 139%;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 139%;
+        color: #2C2B35;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 139%;
+        color: #2C2B35;
+    }
+
+    &__link {
+        color: #43A548;
+    }
+
+    &__right {
+        width: 477px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+        background: linear-gradient(252.7deg, #EBF5EB 17.34%, #EFFBF0 90.57%);
+        border-radius: 40px;
+    }
+
+    &__address {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 139%;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 139%;
+        color: #6F7973;
+    }
+
+    &__number,
+    &__email {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 139%;
+        color: #43A548;
+    }
+
+    &__mail {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .support {
+
+        &__container {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        &__right {
+            width: 100%;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
