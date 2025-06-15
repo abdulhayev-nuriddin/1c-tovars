@@ -46,7 +46,8 @@ input,
 textarea,
 select,
 button,
-label {
+label,
+summary {
     border: none;
     outline: none;
     background: none;
@@ -63,7 +64,8 @@ img {
 }
 
 a,
-button {
+button,
+summary {
     cursor: pointer;
 }
 
