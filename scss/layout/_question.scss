@@ -12,18 +12,39 @@
 
     &__details {
         margin: 20px 0;
+        border-radius: 40px;
+        box-shadow: 0px 4px 12px 6px #0000000D;
+        overflow: hidden;
+
+        summary {
+            width: 100%;
+            padding: 26px 40px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            i {
+                transition: transform 0.3s ease;
+            }
+        }
+
+        &[open] summary i {
+            transform: rotate(180deg);
+        }
     }
 
-    &__summary,
     &__content {
         width: 100%;
-        padding: 26px 1px 26px 40px;
-        box-shadow: 0px 4px 12px 6px #0000000D;
-        border-radius: 40px;
-    }
-
-    &__content {
-        margin: 20px 0;
+        padding: 0 40px 26px 40px;
     }
 
     &__text {
